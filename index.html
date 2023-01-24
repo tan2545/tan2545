@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Conditions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Nattakit gunyum</h1>
+    <h2 id="demo"></h2>
+    
+    <h4>กรุณากรอกคะแนน</h4><input type="text" id="name">
+    <button onclick="checkInput()">Submit</button>
+    <p id="demo"></p>
+
+</body>
+<script>
+    function checkInput() {
+    var input = document.getElementById("name").value;
+    if (input  <= "49") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด E" ;
+    } else if (input <= "54") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด D";
+    } else if (input <= "59") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด D+";
+    }  else if (input <= "64") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด C";
+    } else if (input <= "69") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด C+";
+    } else if (input <= "74") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด B";
+    } else if (input <= "79") {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด B+";
+    }else {
+        document.getElementById("demo").innerHTML = "คุณได้คะแนน " + input + " คะแนน ได้เกรด A";
+    }
+}
+</script>
+
+</body>
+</html>
